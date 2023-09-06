@@ -39,7 +39,7 @@ const Formulario = () => {
                 Avaliar meu IMC
                 </button>
             </form>
-            <h2>Avaliação: {imc}{avaliacao}</h2>
+            <h2>Avaliação: {imc === 0 ? '' : `${imc}${avaliacao}`}</h2>
         </div>
     )
 }
